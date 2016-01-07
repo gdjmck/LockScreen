@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/fail_bg">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/fail_but" 
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#deeffa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#368fce">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+              android:layout_centerVertical="true"
+            android:background="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="我药学"
+            android:textColor="#f1f4f8"
+            android:layout_toRightOf="@+id/img1" />
+        
+        <Spinner 
+            android:id="@+id/bt1"
+            android:background="@drawable/jiahao"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:text="复习模式"
+            android:textColor="#f1f4f8"
+            android:textSize="17dp"
+            android:layout_toLeftOf="@+id/bt1" />
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+         android:layout_marginRight="20dp">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使 用 情 况"
+            android:textSize="20dp"
+            android:textColor="#0387e4"
+            android:layout_gravity="center_horizontal"/>
+        
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#0387e4"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal">
+            
+          <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+              
+              <ImageView 
+                 android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:background="@drawable/one_one" />
+              
+              <LinearLayout 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_marginTop="10dp"
+                 android:gravity="center_horizontal">
+        
+              <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="今天解锁" 
+                 android:textColor="#8e8f8f"/>
+              <TextView 
+                  android:id="@+id/unlock_num"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="10" 
+                 android:textColor="#0387e4"/>
+              <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="次" 
+                 android:textColor="#8e8f8f"/>
+              </LinearLayout>
+          </LinearLayout>
+          
+          <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+              
+              <ImageView 
+                 android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:background="@drawable/one_two" />
+              
+              <LinearLayout 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_marginTop="10dp"
+                 android:gravity="center_horizontal">
+        
+              <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="答对" 
+                 android:textColor="#8e8f8f"/>
+              <TextView 
+                  android:id="@+id/right_answerNum"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="10" 
+                 android:textColor="#0387e4"/>
+              <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="题         " 
+                 android:textColor="#8e8f8f"/>
+              </LinearLayout>
+          </LinearLayout>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="20dp"
+            android:background="#8e8f8f"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/two_one" />
+
+                <LinearLayout 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_marginTop="10dp"
+                 android:gravity="center_horizontal">
+        
+              <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="浏览模式" 
+                 android:textColor="#8e8f8f"/>
+              <TextView 
+                  android:id="@+id/viewNum"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="9" 
+                 android:textColor="#0387e4"/>
+              <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="题" 
+                 android:textColor="#8e8f8f"/>
+              </LinearLayout>
+            </LinearLayout>
+          
+          <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+              
+              <ImageView 
+                 android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:background="@drawable/two_two" />
+              
+              <LinearLayout 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_marginTop="10dp"
+                 android:gravity="center_horizontal">
+        
+              <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="答题模式" 
+                 android:textColor="#8e8f8f"/>
+              <TextView 
+                  android:id="@+id/answerModeNum"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="11" 
+                 android:textColor="#0387e4"/>
+              <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="题" 
+                 android:textColor="#8e8f8f"/>
+              </LinearLayout>
+          </LinearLayout>
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/startreview"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/review_but"/>   
+             </LinearLayout>
+    </LinearLayout>

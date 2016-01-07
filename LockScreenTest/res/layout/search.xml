@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#deeffa"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#368fce" >
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="我药学"
+            android:textColor="#f1f4f8" />
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/jiahao" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/bt1"
+            android:text="中药检索"
+            android:textColor="#f1f4f8"
+            android:textSize="17dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/searchlogo"
+         />
+    <!-- android:background="@drawable/searchlogo" -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:gravity="center_horizontal">"
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/search_click"
+            android:layout_below="@+id/searchView"
+            android:ems="10"
+            android:hint="请输入文字进行搜索"
+            android:completionThreshold="1" >
+
+            
+        </AutoCompleteTextView>
+        <!-- <requestFocus /> -->
+
+        <Button
+            android:id="@+id/search_click"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#368fce"
+            android:text="搜索"
+            android:textColor="#f1f4f8" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Linear1"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/text01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="黄芪" 
+            android:textColor="#368fce"/>
+        
+        <TextView
+            android:id="@+id/text02"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人参" 
+            android:textColor="#368fce"/>
+        
+        <TextView
+            android:id="@+id/text03"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="枸杞" 
+            android:textColor="#368fce"/>
+        
+        <TextView
+            android:id="@+id/text04"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="田七" 
+            android:textColor="#368fce"/>
+        
+         <TextView
+            android:id="@+id/text05"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生姜" 
+            android:textColor="#368fce"/>
+
+        
+    </LinearLayout>
+    <TextView
+        android:id="@+id/search_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+</LinearLayout>

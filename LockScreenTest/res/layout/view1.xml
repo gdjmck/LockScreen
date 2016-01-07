@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/yongback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="陈皮是化痰止咳药"
+            android:textColor="#ffffff"
+            android:textSize="18dp" 
+            android:gravity="center_horizontal"
+            android:id="@+id/q_text"/>"
+
+<ImageView 
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="40dp"
+          android:background="@drawable/chenpi"
+          android:layout_width="200dp"
+          android:layout_height="230dp"
+          android:id="@+id/q_image"/>
+<RelativeLayout android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+<Button
+    android:id="@+id/q_answer1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="21dp"
+    android:text="答案1" />
+
+<Button
+    android:id="@+id/q_answer2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginRight="23dp"
+    android:text="答案2" />
+
+</RelativeLayout>
+
+
+    </LinearLayout>
+  
+</LinearLayout>

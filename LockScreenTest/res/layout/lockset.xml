@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#deeffa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/backgroundtest">
+    
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#368fce">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/book" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="我药学"
+            android:textColor="#f1f4f8"
+            android:layout_toRightOf="@+id/img1" />
+        
+        <Spinner 
+            android:id="@+id/bt1"
+            android:background="@drawable/jiahao"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:text="锁屏模式设置"
+            android:textColor="#f1f4f8"
+            android:textSize="17dp"
+            android:layout_toLeftOf="@+id/bt1" />
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+         android:layout_marginRight="20dp">
+        
+        <TextView 
+            android:text="壁纸"
+            android:textSize="20dp"
+            android:textColor="#368fce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View
+           android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#368fce" 
+            android:layout_marginTop="3dp"/>
+        
+        <Button
+           android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="默认"
+            android:gravity="left"
+            android:background="#deeffa"
+            android:id="@+id/defaultwp"/>
+        
+        <View
+           android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#bac0c3" 
+            android:layout_marginTop="-15dp"/> 
+            
+        <Button
+           android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="本地"
+            android:gravity="left"
+            android:background="#deeffa"
+            android:id="@+id/localgallery"/>
+        
+        <View
+           android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#bac0c3" 
+            android:layout_marginTop="-15dp"/> 
+            
+        <Button
+           android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="在线"
+            android:gravity="left"
+            android:background="#deeffa"/>
+        
+        <View
+           android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#bac0c3" 
+            android:layout_marginTop="-15dp"/> 
+            
+        <TextView 
+            android:text="复习提醒"
+            android:textSize="20dp"
+            android:textColor="#368fce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"/>
+        <View
+           android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#368fce" 
+            android:layout_marginTop="3dp"/>
+        
+        <Button
+           android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="每日提醒"
+            android:gravity="left"
+            android:background="#deeffa"
+            android:id="@+id/revice"/>
+        
+        <View
+           android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#bac0c3" 
+            android:layout_marginTop="-15dp"/> 
+            
+            <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <TextView 
+            android:text="提醒时间"
+            android:textSize="18dp"
+            android:textColor="#010101"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"/> "
+            
+            <Spinner
+                android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:entries="@array/times"
+            android:layout_alignParentRight="true"
+            android:id="@+id/notifytime"/>
+           
+            </RelativeLayout>
+            
+            <View
+           android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#bac0c3" />
+            
+         <TextView 
+            android:text="用户习惯"
+            android:textSize="20dp"
+            android:textColor="#368fce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"/>
+        <View
+           android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#368fce" 
+            android:layout_marginTop="3dp"/>   
+            
+        <ListView 
+            android:id="@+id/listview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/direction" >
+            
+        </ListView>
+        </LinearLayout>
+    </LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#deeffa"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#368fce" >
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+              android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="我药学"
+            android:textColor="#f1f4f8" />
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/jiahao" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/bt1"
+            android:text="养生信息"
+            android:textColor="#f1f4f8"
+            android:textSize="17dp" />
+    </RelativeLayout>
+    
+    <ListView android:id="@+id/yangsheng_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dip">
+        
+    </ListView>
+    
+    </LinearLayout>

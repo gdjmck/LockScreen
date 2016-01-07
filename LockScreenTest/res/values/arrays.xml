@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <string-array name="times">
+        <item>20:00</item>
+        <item>21:00</item>
+        <item>22:00</item>
+    </string-array>  
+    <string-array name="direction">
+        <item>左</item>
+        <item>右</item>
+     </string-array> 
+     <string-array name="menu_item">
+         <item >复习模式</item>
+         <item >养生信息</item>
+         <item >中药检索</item>
+         <item >锁屏模式</item>
+         <item >学霸模式</item>
+         <item >小游戏</item>
+     </string-array>
+</resources>

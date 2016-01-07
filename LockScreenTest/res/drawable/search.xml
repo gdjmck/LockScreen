@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/search_click"
+            android:layout_below="@+id/searchView"
+            android:ems="10"
+            android:hint="请输入文字进行搜索" >
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+        <Button
+            android:id="@+id/search_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/seach_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+</LinearLayout>

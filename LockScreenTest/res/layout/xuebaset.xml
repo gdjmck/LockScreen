@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#deeffa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#368fce">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+              android:layout_centerVertical="true"
+            android:background="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="我药学"
+            android:textColor="#f1f4f8"
+            android:layout_toRightOf="@+id/img1" />
+        
+        <Button 
+            android:id="@+id/bt1"
+            android:background="@drawable/jiahao"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:text="学霸设置"
+            android:textColor="#f1f4f8"
+            android:textSize="17dp"
+            android:layout_toLeftOf="@+id/bt1" />
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+         android:layout_marginRight="20dp">
+        
+        <View
+           android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#368fce" 
+            android:layout_marginTop="3dp"/>
+        <TextView 
+            android:text="监督模式"
+            android:textSize="20dp"
+            android:textColor="#368fce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        <RadioGroup 
+            android:id="@+id/superviseMdoe"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+            <RadioButton 
+                android:id="@+id/qianghan"
+                android:text="强悍"/>
+            <RadioButton 
+                android:id="@+id/wenrou"
+                android:text="温柔"/>
+        </RadioGroup>
+        
+        <View
+           android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#368fce" 
+            android:layout_marginTop="3dp"/>
+        
+        <TextView 
+            android:text="完成时提醒"
+            android:textSize="20dp"
+            android:textColor="#368fce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+       
+        <RadioGroup 
+            android:id="@+id/soundGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <RadioButton 
+                android:id="@+id/shengyin"
+                android:text="声音"/>
+            <RadioButton 
+                android:id="@+id/zhendong"
+                android:text="震动"/>
+        </RadioGroup>
+        <View
+           android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#368fce" 
+            android:layout_marginTop="3dp"/>
+
+        <Button
+            android:id="@+id/blockList"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="10dp"
+            android:background="#deeffa"
+            android:gravity="left"
+            android:text="应用白名单"
+            android:textColor="#368fce" />
+
+         <View
+           android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#368fce" 
+            android:layout_marginTop="-5dp"/>
+        <TextView 
+            android:text="背景图"
+            android:textSize="20dp"
+            android:textColor="#368fce"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>  
+            <View
+           android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#368fce" 
+            android:layout_marginTop="3dp"/>
+            <Button
+           android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="默认"
+            android:gravity="left"
+            android:background="#deeffa"/>
+        
+        <View
+           android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#bac0c3" 
+            android:layout_marginTop="-15dp"/> 
+            
+        <Button
+           android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="本地"
+            android:gravity="left"
+            android:background="#deeffa"/>
+        
+        <View
+           android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#bac0c3" 
+            android:layout_marginTop="-15dp"/> 
+         
+        "
+        <Button
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="在线"
+            android:gravity="left"
+            android:background="#deeffa"/>
+       
+        <View
+           android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#bac0c3" 
+            /> "
+        </LinearLayout>
+    </LinearLayout>
